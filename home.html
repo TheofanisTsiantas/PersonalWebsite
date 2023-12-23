@@ -90,10 +90,7 @@
   <div class="container">
     <!--------------- IMAGE PART --------------->
     <div class="row my-3" style="border: black solid 1px;">
-      <div class="d-none d-xl-flex d-lg-flex col-3 align-items-center"  style="border: black solid 1px;">
-        <img src="/Resources/Foto.jpg" class="rounded-circle mx-auto" alt="Responsive image">
-      </div>
-      <div class="d-flex d-xl-none d-lg-none col-5 align-items-center"  style="border: black solid 1px;">
+      <div class="d-flex col-lg-3 col-sm-5 align-items-center"  style="border: black solid 1px;">
         <img src="/Resources/Foto.jpg" class="rounded-circle mx-auto" alt="Responsive image">
       </div>
 
@@ -104,20 +101,27 @@
           <div class="d-none d-lg-block py-2">My name is <span class="fw-bold">Theofanis</span> and I am a mechanical engineer and software developer.</div>
           <div class="d-none d-lg-block py-2">I started my professional journey as a developer engineer in the turbomachinery sector where I also made my first steps in professional programming, project management, 
             and engineering simulaiton. Later I continued as a full-time programmer in the field of nummerical mechanics for structural simulation.</div>
-          <div class="d-none d-lg-block py-2">In this website you will find useful information on my knowledge, skills and concluded past projedcts in all domains of my expertise.</div>
+          <div class="d-none d-lg-block py-2">In this website you will find useful information on my knowledge, skills and concluded past projects in all domains of my expertise.</div>
           <div class="d-none d-lg-block py-2">You will also find a detail version of my <a class="secondaryFont" href="">Bio</a> and some more information about my personality (section <a class="secondaryFont" href="">About</a>).</div>
         <!-- MD -->
-          <div class="d-none d-md-block d-lg-none py-1">Welcome to personal website!</div>
+          <div class="d-none d-md-block d-lg-none py-1">Welcome to my personal website!</div>
           <div class="d-none d-md-block d-lg-none py-1">My name is <span class="fw-bold">Theofanis</span> and I am a mechanical engineer and software developer.</div>
           <div class="d-none d-md-block d-lg-none py-1">I started as a developer engineer in the turbomachinery sector and later I continued as a full-time programmer in the field of nummerical mechanics for structural simulation.</div>
-          <div class="d-none d-md-block d-lg-none py-1">In this website you will find information on my knowledge, skills, past projedcts together with 
+          <div class="d-none d-md-block d-lg-none py-1">In this website you will find information on my knowledge, skills, past projects together with 
             a detail version of my <a class="secondaryFont" href="">Bio</a> and some more information about my personality (section <a class="secondaryFont" href="">About</a>).</div>
         <!-- SM -->
-        <div class="d-block d-md-none py-1">Welcome to personal website! My name is <span class="fw-bold">Theofanis</span> and I am a mechanical engineer and software developer.</div>
-        <div class="d-block d-md-none py-1">I started as a developer engineer in the turbomachinery sector and continued as a full-time programmer in the field of nummerical mechanics for structural simulation.</div>
-        <div class="d-block d-md-none py-1">Here you will find information on my knowledge, skills, past projedcts.</div>
-        <!-- ALL -->
-        <div class="py-0"> Enjoy!</div>
+        <div class="d-none d-sm-block d-md-none py-1">Welcome to my personal website! My name is <span class="fw-bold">Theofanis</span> and I am a mechanical engineer and software developer.</div>
+        <div class="d-none d-sm-block d-md-none py-1">I started as a developer engineer in the turbomachinery sector and continued as a full-time programmer in the field of nummerical mechanics for structural simulation.</div>
+        <div class="d-none d-sm-block d-md-none py-1">Here you will find information on my knowledge, skills, past projects.</div>
+        <!-- XS -->
+        <div class="d-block d-sm-none py-0 px-3 text-center">Welcome to my personal website! I am a mechanical engineer and software developer. In this 
+          site you will find information on my knowledge, skills and past projects. Enjoy!
+        </div>
+        
+        
+        
+        <!-- XL/LG/MD/SM -->
+        <div class="d-none d-sm-block py-0"> Enjoy!</div>
       </div>
     </div>
   </div>
@@ -222,7 +226,7 @@
   <div class="container">
     <div class="row my-md-4">
       <!------------------------ BIO section: section description -------------------------->
-      <div class="d-block col-6 primaryFont" style="border: black solid 1px;">
+      <div class="d-block col-12 col-sm-6 primaryFont" style="border: black solid 1px;">
         <a href=""><h1 class="text-center"> Bio </h1></a>
         <!-- XL/LG/MD -->
         <div class="d-none d-md-block px-2 pt-2">Click at <a class="secondaryFont" href="">Bio</a> to view detailed information of:
@@ -239,11 +243,20 @@
           Contact information can be found there as well.  
         </div>      
         <!-- MD -->
-        <div class="d-none d-md-block d-sm-none d-lg-none">
+        <div class="d-none d-md-block d-lg-none">
           Contact information can be found there, too.  
         </div>   
         <!-- SM -->
-        <div class="d-block d-md-none px-2 pt-2">Information on:
+        <div class="d-none d-sm-block d-md-none px-2 pt-2">Information on:
+          <ul>
+            <li>University Education</li>
+            <li>Skills</li>
+            <li>Certificates</li>
+            <li>Professional experience</li>
+          </ul>
+        </div>
+        <!-- XS -->
+        <div class="d-block d-sm-none px-2 pt-2">Click at <a class="secondaryFont" href="">Bio</a> to view detailed information of:
           <ul>
             <li>University Education</li>
             <li>Skills</li>
@@ -285,7 +298,6 @@
           </div>
         </a>
       </div>
-      <!-------------------------------------- ABOUT ---------------------------------------->
     </div>
   </div>
 
@@ -298,7 +310,7 @@
 <div class="container d-block">
   <div class="row primaryFont justify-content-end">
     <!-- Date and version -->
-    <div class="col-3" style="border: 1px solid black;">
+    <div class="col-8 col-sm-3" style="border: 1px solid black;">
       2024, Version 1.0.0
     </div>
     <div class="col" style="border: 1px solid black;">
