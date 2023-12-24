@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <!-- ATTENTION: Order matters here!! primaryFont-->
+    <!-- ATTENTION: Order matters here!! -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/custom/custom_navbar.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/custom/custom_fonts.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/custom/custom_buttons.css">
@@ -23,41 +23,42 @@
   <!--                                --------------                                -->
   <!-- ------------------------------ NAVIGATION BAR ------------------------------ -->
   <!--                                --------------                                -->
-<div class="d-none d-sm-block container py-2" style="border: 2px solid black;">
-  <div class="row primaryFont">
-    <div class="col-xl-4 justify-content-center align-bottom text-center py-1" style="border: 2px solid black;">
-       <h1>Theofanis Tsiantas</h1>
-    </div>
 
-    <div class="col mt-auto" style="border: 1px black dotted;">
+  <!---------- HORIZONTAL navigation ---------->
+  <div class="d-none d-sm-block container py-2" style="border: 2px solid black;">
+    <div class="row primaryFont">
+      <div class="col-xl-4 justify-content-center align-bottom text-center py-1" style="border: 2px solid black;">
+         <h1>Theofanis Tsiantas</h1>
+      </div>
+
+      <div class="col mt-auto" style="border: 1px black dotted;">
         <nav class="navbar navbar-expand navbar-dark bg-dark" style="border: 1px black dotted;">
           <div class="container-fluid justify-content-center justify-content-xl-end" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item active d-flex align-items-center">
-                  <h5 class="text-center"><a class="nav-link" href="#">Home</a></h5>
-                </li>
-                <li class="nav-item active d-flex align-items-center align-text" style="border: 1px black dotted;">
-                  <h5 class="text-center"><a class="nav-link" href="#">Mechanical Engineering</a></h5>
-                </li>
-                <li class="nav-item active d-flex align-items-center">
-                  <h5 class="text-center"><a class="nav-link" href="#">Software Development</a></h5>
-                </li>
-                <li class="nav-item active d-flex align-items-center">
-                  <h5 class="text-center"><a class="nav-link" href="#">Bio</a></h5>
-                </li>
-                <li class="nav-item active d-flex align-items-center">
-                  <h5 class="text-center"><a class="nav-link" href="#">About</a></h5>
-                </li>
-              </ul>
-            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item active d-flex align-items-center">
+                <h5 class="text-center"><a class="nav-link" href="#">Home</a></h5>
+              </li>
+              <li class="nav-item active d-flex align-items-center align-text" style="border: 1px black dotted;">
+                <h5 class="text-center"><a class="nav-link" href="#">Mechanical Engineering</a></h5>
+              </li>
+              <li class="nav-item active d-flex align-items-center">
+                <h5 class="text-center"><a class="nav-link" href="#">Software Development</a></h5>
+              </li>
+              <li class="nav-item active d-flex align-items-center">
+                <h5 class="text-center"><a class="nav-link" href="#">Bio</a></h5>
+              </li>
+              <li class="nav-item active d-flex align-items-center">
+                <h5 class="text-center"><a class="nav-link" href="#">About</a></h5>
+              </li>
+            </ul>
+          </div>
         </nav>  
       </div>
     </div>
   </div>
 </div>
 
-
-  <!--    -->
+<!---------- VERTICAL navigation ---------->
   <div class="d-block d-sm-none container nullifySurround py-2" style="border: 2px solid black;">
     <div class="row primaryFont">
       <div class="col-6 nullifySurround" style="border: 2px solid black;">
@@ -65,7 +66,7 @@
       </div>
 
       <div class="col dropdown d-flex">
-       <!-- -->
+       <!-- BUTTON for menu -->
         <button class="ms-auto btn btn-secondary" onclick="verticalMenuShow()" id="menuBtn">Menu</button> 
       </div>
   </div>
@@ -77,7 +78,7 @@
   <div class="seperatorSc"></div>
 </div>
 
-<!--  -->
+<!-- DROPDOWN button list -->
 <div id="dropdownContent_id">
   <a href="/home.html"> <h2 class="d-sm-none listElementV primaryFont my-2">Home</h2> </a>
   <a href="/skills.html"> <h2 class="d-sm-none listElementV primaryFont my-2" >Mechanical Engineering</h2> </a>
@@ -85,11 +86,14 @@
   <a href="/lectures.html"><h2 class="d-sm-none listElementV primaryFont my-2">Bio</h2></a>
   <a href="/cv.html"><h2 class="d-sm-none listElementV primaryFont my-2">About</h2></a>
 </div>
-  <!-- ---------------------------------------------------------------------------- -->
+
+  <!--                                -------------                                 -->
+  <!-- ------------------------------ INTRO SECTION ------------------------------- -->
+  <!--                                -------------                                 -->
 
   <div class="container">
-    <!--------------- IMAGE PART --------------->
     <div class="row my-3" style="border: black solid 1px;">
+    <!--------------- IMAGE PART --------------->
       <div class="d-flex col-lg-3 col-sm-5 align-items-center"  style="border: black solid 1px;">
         <img src="/Resources/Foto.jpg" class="rounded-circle mx-auto" alt="Responsive image">
       </div>
@@ -117,22 +121,19 @@
         <div class="d-block d-sm-none py-0 px-3 text-center">Welcome to my personal website! I am a mechanical engineer and software developer. In this 
           site you will find information on my knowledge, skills and past projects. Enjoy!
         </div>
-        
-        
-        
         <!-- XL/LG/MD/SM -->
         <div class="d-none d-sm-block py-0"> Enjoy!</div>
       </div>
     </div>
   </div>
 
-  <!---->
-  <!---->
-  <!---->
+  <!--                        ------------------------------                        -->
+  <!-- ---------------------- MECHANICAL ENGINEERING SECTION ---------------------- -->
+  <!--                        ------------------------------                        -->
 
   <div class="container">
     <div class="row my-3" style="border: black solid 1px;">
-      <!--------------- TEXT PART --------------->
+      <!--------------- TEXT PART (XL->SM) --------------->
       <div class="col primaryFont">
         <!-- LG/XL -->
         <a href=""><h1 class="d-none d-lg-block px-2 pb-1"> Mechanical Engineering </h1></a>
@@ -147,7 +148,7 @@
         <!-- MD -->
         <a href=""><h2 class="d-none d-md-block d-lg-none px-2 pb-1"> Mechanical Engineering </h2></a>
         <div class="d-none d-md-block px-2">My domain of expertise is non-linear structural simulation (statics, dynamics, rotordynamics).</div>
-        <!--  -->
+        <!-- MD/LG/XL -->
         <div class="d-none d-md-block pt-1 px-2"><span class="fw-bold">Keywords</span>: ANSYS, NASTRAN, Non-linear contacts, journal bearing simulation</div>
         <!-- SM -->
         <a href=""><h2 class="d-block d-md-none py-2 text-center"> Mechanical Engineering </h2></a>
@@ -158,16 +159,16 @@
         <a href=""><img src="/Resources/Cylinder.png" class="mx-auto" alt="Responsive image"></a>
       </div>
 
-      <!---------------  --------------->
+      <!--------------- TEXT PART (for XS only!) --------------->
       <div class="d-block d-md-none px-2 primaryFont"><span class="fw-bold">Expertise</span>: non-linear structural simulation (statics, dynamics)</div>
       <div class="d-block d-md-none px-2 primaryFont"><span class="fw-bold">Keywords</span>: ANSYS, NASTRAN, Non-linear contacts, journal bearings</div>
 
     </div>
   </div>
 
-  <!---->
-  <!---->
-  <!---->
+  <!--                        ----------------------------                        -->
+  <!-- ---------------------- SOFTWARE DEVELOPMENT SECTION ---------------------- -->
+  <!--                        ----------------------------                        -->
 
   <div class="container">
     <!--------------- IMAGE PART --------------->
@@ -176,7 +177,7 @@
         <a href=""><img src="/Resources/CodeSnipet.png" class="mx-auto" alt="Responsive image"></a>
       </div>
 
-      <!--------------- TEXT PART --------------->
+      <!--------------- TEXT PART (XL->SM) --------------->
       <div class="col primaryFont" style="border: black solid 1px;">
         <!-- LG/XL -->
         <a href=""><h1 class="d-none d-lg-block px-2 pb-1"> Software Development </h1></a>
@@ -187,17 +188,19 @@
         <a href=""><h2 class="d-none d-md-block d-lg-none px-2 pb-1"> Software Development </h2></a>
         <div class="d-none d-md-block d-lg-none px-2">I work as backend software developer and have a lot of experience with different programming languages.
           I have developed standalone programs and plugins for external software.</div>
-        <!-- ALL -->
+        <!-- MD/LG/XL -->
         <div class="d-none d-md-block px-2 pt-1"><span class="fw-bold">Keywords</span>: C++, C#, Java, Qt, WPF, HTML, CSS</div>
       </div>
 
-      <!-- -->
+      <!-- IMAGE PART (image has to be re-added here to include rounding!) -->
       <div class="text-center py-2 primaryFont">
         <a href=""><h2 class="d-block d-md-none px-2 pb-1"> Software Development </h2></a>
         <div class="d-flex d-md-none align-items-center px-1"  style="border: black solid 1px;">
           <a href=""><img src="/Resources/CodeSnipet.png" class="mx-auto rounded-4" alt="Responsive image"></a>
         </div>
       </div>
+
+      <!--------------- TEXT PART (for XS only!) --------------->
       <div class="d-block d-md-none px-2 primaryFont"><span class="fw-bold">Expertise</span>: Backend, Object oriented programming</div>
       <div class="d-block d-md-none px-2 primaryFont"><span class="fw-bold">Keywords</span>: C++, C#, Java, Qt, WPF, HTML, CSS</div>
 
@@ -206,6 +209,9 @@
     </div>
   </div>
 
+  <!--                        --------------------                        -->
+  <!-- ---------------------- BIO & ABOUT SECTIONS ---------------------- -->
+  <!--                        --------------------                        -->
 
   <div class="container">
     <div class="row my-md-4">
@@ -285,6 +291,10 @@
     </div>
   </div>
 
+  <!--                        ------                         -->
+  <!-- ---------------------- FOOTER  ---------------------- -->
+  <!--                        ------                         -->
+
 <!-- FOOTER seperator -->
 <div class="container d-flex">
   <div class="seperatorSc"></div>
@@ -318,11 +328,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 
 </body>
 </html>
