@@ -16,9 +16,16 @@
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/custom/Menu.js" ></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+      </script>
+      
   </head>
 
-<body style="background-color: black;">
+<body style="background-color: gray;">
 
   <!--                                --------------                                -->
   <!-- ------------------------------ NAVIGATION BAR ------------------------------ -->
@@ -121,11 +128,11 @@
         <!---->
         <h6 class="d-inline py-2 fw-bold">Non-linearities:</h6>: Contact (Pure Penalty, Lagrange Multipliers), Large deflections/strains, Material plasticity.
         <br>
-        <h6 class="d-inline py-2 fw-bold">Dynamics:</h6>: Forced Response, Prestressed Modal analysis.
+        <h6 class="d-inline py-2 fw-bold">dynamics:</h6>: Forced Response, Prestressed Modal analysis.
         <br>
-        <h6 class="d-inline py-2 fw-bold">RotorDynamics:</h6>: Lateral & Torsional, Journal bearings (plain, lobe, tilting pad), Hydrodynamic seals.
+        <h6 class="d-inline py-2 fw-bold">Rotordynamics:</h6>: Lateral & Torsional, Journal bearings (plain, lobe, tilting pad), Hydrodynamic seals.
         <br>
-        <h6 class="d-inline py-2 fw-bold">Adnavnced topics:</h6>: Superelements, Damped Dynamics, Cylcic symmetric structures, Bolt assessment, Shrink fits.
+        <h6 class="d-inline py-2 fw-bold">Adnavnced topics:</h6>: Superelements, Damped dynamics, Cylcic symmetric structures, Bolt assessment, Shrink fits.
         </div>
                <!-- LG/XL -->
                <!-- XL -->
@@ -158,7 +165,11 @@
                <!-- SM -->
       </div>
     </div>
-  </div>
+  </div> 
+
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+    Tooltip on top
+  </button>
 
   <!--                              ----------------                                -->
   <!-- ---------------------------- PROJECTS SECTION ------------------------------ -->
@@ -169,7 +180,7 @@
       <div class="col primaryFont">
         <h2 class="d-none d-lg-block pb-2"> Milestone Projects </h2>
         <!---->
-        <table class="table table-dark table-striped mx-">
+        <table class="table table-dark table-striped table-hover">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -185,42 +196,42 @@
               <th scope="row">25</th>
               <td>2023</td>
               <td>Extraction of the reduced stiffness matrix for various gear housing geometries.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
             <tr>
               <th scope="row">24</th>
               <td>2023</td>
               <td>Investigation of 3D root stresses in external spur and helical gears.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
             <tr>
               <th scope="row">23</th>
               <td>2023</td>
               <td>Quasi-static contact analysis of gear pair.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
             <tr>
               <th scope="row">22</th>
               <td>2022</td>
               <td>Investigation of gear body deformation field under different static loads.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
             <tr>
               <th scope="row">21</th>
               <td>2022</td>
               <td>Investigation of the dynamic behaviour of (horizontal) pump-motor-baseplate assembly.</td>
-              <td>Structural Dynamics (modal analysis)</td>
+              <td>Structural dynamics (Modal analysis)</td>
               <td>SULZER AG</td>
             </tr>
             <tr>
               <th scope="row">20</th>
               <td>2022</td>
               <td>Structural vibration analysis of a 5-stage vertical pump with excessive vibrations on site.</td>
-              <td>Structural Dynamics <br> (Modal & Forced response analysis)</td>
+              <td>Structural dynamics <br> (Modal & Forced response analysis)</td>
               <td>SULZER AG</td>
             </tr>
             <tr>
@@ -234,7 +245,7 @@
               <th scope="row">18</th>
               <td>2022</td>
               <td >Investigation of the influence of an impeller material on its fatigue life.</td>
-              <td>Structural Dynamics (fatigue)</td>
+              <td>Structural dynamics (Fatigue)</td>
               <td>SULZER AG</td>
             </tr>    
             <tr>
@@ -262,98 +273,98 @@
               <th scope="row">14</th>
               <td>2021</td>
               <td>Geometrical optimization of pump diffuser geometry.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>      
             <tr>
               <th scope="row">13</th>
               <td>2021</td>
               <td>Optimization of baseplate design of a vertical pump for optimal dynamic behavior.</td>
-              <td>Structural Dynamics</td>
+              <td>Structural dynamics</td>
               <td>SULZER AG</td>
             </tr> 
             <tr>
               <th scope="row">12</th>
               <td>2021</td>
               <td>Topology optimization of the diffuser of a multi-stage pump.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr> 
             <tr>
               <th scope="row">11</th>
               <td>2021</td>
-              <td>Dynamic analysis of a pump-motor-baseplate assembly showing excessive field vibrations.</td>
-              <td>Structural Dynamics</td>
+              <td>Dynamic analysis of a pump-motor-baseplate assembly showing excessive vibrations on site.</td>
+              <td>Structural dynamics</td>
               <td>SULZER AG</td>
             </tr>     
             <tr>
               <th scope="row">10</th>
               <td>2020</td>
               <td>Baseplate design optimisation for vibration reduction.</td>
-              <td>Structural Dynamics (Modal Analysis)</td>
+              <td>Structural dynamics (Modal Analysis)</td>
               <td>SULZER AG</td>
             </tr>     
             <tr>
               <th scope="row">9</th>
               <td>2020</td>
               <td>Conduction of O-Ring extrusion limit hardware tests (Phase 2/2).</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>
             <tr>
               <th scope="row">8</th>
               <td>2020</td>
               <td>Lateral rotordynamic analysis of a twelve stage multiphase pump.</td>
-              <td>Lateral RotorDynamics</td>
+              <td>Lateral Rotordynamics</td>
               <td>SULZER AG</td>
             </tr>      
             <tr>
               <th scope="row">7</th>
               <td>2019</td>
               <td>Conduction of O-Ring extrusion limit hardware tests (Phase 1/2).</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>
             <tr>
               <th scope="row">6</th>
               <td>2019</td>
               <td>Bearing housing design optimisation for vibration reduction.</td>
-              <td>Structural Dynamics (Modal Analysis)</td>
+              <td>Structural dynamics (Modal Analysis)</td>
               <td>SULZER AG</td>
             </tr>
             <tr>
               <th scope="row">5</th>
               <td>2019</td>
               <td>Evaluation of the mechanical integrity of a single stage pump.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>    
             <tr>
               <th scope="row">4</th>
               <td>2018</td>
               <td>Design optimisation of a single stage pump with respect to casing stiffness.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>    
             <tr>
               <th scope="row">3</th>
               <td>2018</td>
               <td>Thermal-Structural simulation of centrifugal pumps.</td>
-              <td>Steady State Themal Analysis - Structural Statics</td>
+              <td>Steady State Themal Analysis - Structural statics</td>
               <td>SULZER AG</td>
             </tr>    
             <tr>
               <th scope="row">2</th>
               <td>2018</td>
               <td>Pressure boundary analysis of a multistage pump.</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>  
             <tr>
               <th scope="row">1</th>
-              <td>2018</td>
+              <td>2017</td>
               <td>Fatigue analysis of a rotating impeller under partial load conditions.</td>
-              <td>Structural Dynamics (Fatigue)</td>
+              <td>Structural dynamics (Fatigue)</td>
               <td>SULZER AG</td>
             </tr>   
           </tbody>
@@ -400,7 +411,7 @@
                 <br>(online software demonstration)
               </td>
               <td>Lecture</td>
-              <td>Structural Dynamics</td>
+              <td>Structural dynamics</td>
               <td>KISSsoft AG</td>
               <td>200</td>
             </tr>
@@ -409,16 +420,16 @@
               <td>2022</td>
               <td>Unbalance excitation calculations.</td>
               <td>Lecture</td>
-              <td>Structural Dynamics</td>
+              <td>Lateral rotordynamics</td>
               <td>KISSsoft AG</td>
               <td>30</td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>2022</td>
-              <td>Introduction to lateral rotordynamics with FEM.</td>
+              <td>Introduction to linear lateral rotordynamics with FEM.</td>
               <td>Lecture</td>
-              <td>Structural Dynamics</td>
+              <td>Lateral rotordynamics</td>
               <td>KISSsoft AG</td>
               <td>30</td>
             </tr>
@@ -427,8 +438,7 @@
               <td>2022</td>
               <td>Non-linear lateral rotordynamics with FEM.</td>
               <td>Lecture</td>
-              <td>Structural Dynamics 
-                <br>(Modal & Forced response analysis)</td>
+              <td>Lateral rotordynamics</td>
               <td>ETH Zurich (D-MAVT)</td>
               <td>20</td>
             </tr>
@@ -439,17 +449,16 @@
                 <br> (4-Week online Seminar)
               </td>
               <td>Seminar</td>
-              <td>Structural Dynamics</td>
+              <td>Lateral & Torsional <br>rotordynamics</td>
               <td>SULZER AG</td>
               <td>50</td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>2021</td>
-              <td>Nonlinear lateral rotordynamics with FEM.</td>
+              <td>Non-linear lateral rotordynamics with FEM.</td>
               <td>Lecture</td>
-              <td>Structural Dynamics
-                <br>(Modal & Forced response analysis)</td>
+              <td>Lateral rotordynamics </td>
               <td>ETH Zurich (D-MAVT)</td>
               <td>25</td>
             </tr>
@@ -458,7 +467,7 @@
               <td>2019</td>
               <td>Static structural simulation of pressure containers.</td>
               <td>Lecture</td>
-              <td>Structural Statics</td>
+              <td>Structural statics</td>
               <td>ETH Zurich (D-MAVT)</td>
               <td>25</td>
             </tr>
