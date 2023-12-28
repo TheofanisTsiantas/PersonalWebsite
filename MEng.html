@@ -14,16 +14,13 @@
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/custom/Menu.js" ></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/custom/Tooltip.js" ></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!-- JS for tool tip pop-up -->
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip({tooltipClass: "custom-tooltip-styling"});});</script>
 
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
-      });
-      </script>
-
-  </head>
+</head>
 
 <body style="background-color: black;">
 
@@ -188,178 +185,258 @@
           </thead>
 
           <tbody>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="In this projedct, many different gear housing geometries were read in ANSYS and the corresponding reduced
+            stiffness matrix was computed for use in KISSsoft and KISSDesign.">
               <th scope="row">25</th>
               <td>2023</td>
-              <td data-toggle="tooltip" 
-              title="In this projedct, many different gear housing geometries were read in ANSYS and the corresponding reduced
-              stiffness matrix was computed for use in KISSsoft and KISSDesign.">
-              Extraction of the reduced stiffness matrix for various gear housing geometries.</td>
+              <td>Extraction of the reduced stiffness matrix for various gear housing geometries.</td>
               <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Quasi-static assessment of the root stresses in 3D gear models.
+            Different load magnitudes and distributions were investigated.
+            Mesh convergence study performed.
+            Analysis software: ANSYS WB.">
               <th scope="row">24</th>
               <td>2023</td>
               <td>Investigation of 3D root stresses in external spur and helical gears.</td>
               <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Modeling of contact of two spur gears in space.
+            Large deflections and rigid MPCs used.
+            Rotation of two pitches was simulated.
+            Submodel creation for the evaluation of contact stresses.
+            Analysis software: ANSYS WB.">
               <th scope="row">23</th>
               <td>2023</td>
               <td>Quasi-static contact analysis of gear pair.</td>
               <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Creation of various cyclic symmetric gear bodies and investigation of their deformation field 
+            under varius loads. Quasi-static analyis. Analysis softeware: Salome.">
               <th scope="row">22</th>
               <td>2022</td>
               <td>Investigation of gear body deformation field under different static loads.</td>
               <td>Structural statics</td>
               <td>KISSsoft AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="State of the art modelling of all assembly components (inlc. appropriate connections and boundary conditions).
+            Calculation of the eigenfrequencies and corresponding modes of the complete assembly.
+            Evaluation of the potential of dynamic amplification phenomena on field.">
               <th scope="row">21</th>
               <td>2022</td>
               <td>Investigation of the dynamic behaviour of (horizontal) pump-motor-baseplate assembly.</td>
               <td>Structural dynamics (Modal analysis)</td>
               <td>SULZER AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Calculation of the eigenfrequencies of a five stage vertically suspended pump who was indicating high vibration levels on site.
+            Mode comparison with field measurement. Assessment of the vibration amplitudes with harmonic response analysis.
+            Design and implementation of mitigation measures.">
               <th scope="row">20</th>
               <td>2022</td>
               <td>Structural vibration analysis of a 5-stage vertical pump with excessive vibrations on site.</td>
               <td>Structural dynamics <br> (Modal & Forced response analysis)</td>
               <td>SULZER AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Evaluation of rotor dynamic stability (acceptable damping and vibration levels) of a six stage low flow and low viscosity pump.">
               <th scope="row">19</th>
               <td>2022</td>
               <td>Lateral rotordynamic analysis of 3 stage low flow, low viscosity pump.</td>
               <td>Lateral rotordynamics</td>
               <td>SULZER AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Investigation on the potential of increasing the utilisation factor of an impeller with respect to fatigue life, 
+            when the impeller material is modified. Analysis done with ANSYS and the FKM guideline.">
               <th scope="row">18</th>
               <td>2022</td>
               <td >Investigation of the influence of an impeller material on its fatigue life.</td>
               <td>Structural dynamics (Fatigue)</td>
               <td>SULZER AG</td>
             </tr>    
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Assessment of the rotor dynamic stability of a four stage axial split water pump.
+            Modal damped analysis (Campbell & damping diagrams) was performed.
+            Modeling of nonlinear rotordynamic phenomena (fluid film bearings, shaft contact) was included.
+            Centering at mechanical seal locations (bearing alignment), Sag lines investigated.
+            Variant w/ two instead of four stages was investigated as well.">
               <th scope="row">17</th>
               <td>2021</td>
               <td>Lateral rotordynamic investigation of a four stage axial split pump.</td>
               <td>Lateral rotordynamics</td>
               <td>SULZER AG</td>
             </tr>    
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Calculation of the steady state temperature distribution and heat dissipation of bearing housings with shafts operating at different speeds.
+            Various oil levels and cooling configurations were analysed.
+            Results compared with test measurements.
+            Analysis software: Siemens Simcenter (Maya Thermal solver).">
               <th scope="row">16</th>
               <td>2021</td>
               <td>Thermal analysis of bearing housings under different cooling conditions.</td>
               <td>Steady State Thermal Analysis</td>
               <td>SULZER AG</td>
             </tr>      
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Investigation of the rotordynamic stability of multistage pumps of different configurations (number impellers, diffuser, blind stages).
+            Influence of various fluid types (light—>Medium—>Dense) and design concepts analysed (swirl breaks, serrations, etc.). 
+            More than 50 FEA calculations performed (damped modal analysis, damped harmonic response analysis).
+            Rotor geometry: 1D (beam) elements: 300 nodes, Non-linear rotordynamic effects included: Bearings, Annular seals, etc., 
+            Analysis software: MADYN.">
               <th scope="row">15</th>
               <td>2021</td>
               <td>Lateral rotordynamic investigation of multistage barrel pumps.</td>
               <td>Lateral rotordynamics</td>
               <td>SULZER AG</td>
             </tr>   
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Use of advanced simulation to reduce structural component mass. 
+            Implement topology optimisation algorithms in combination with model reduction methods (equivalent static model). 
+            Analysis software: ANSYS, CAD modelling: Siemens NX. Result 10% mass reduction.">
               <th scope="row">14</th>
               <td>2021</td>
               <td>Geometrical optimization of pump diffuser geometry.</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>      
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="The top baseplate of a vertical, horizontally split machine was optimized to provide maximum stiffness with minimum material. 
+            Various models were investigated (motor modeling strategy, MPC connections (rigid/deformable), different rib configurations, pre-stressed anaylsis). 
+            Analysis software: SimCenter (SOL103).">
               <th scope="row">13</th>
               <td>2021</td>
               <td>Optimization of baseplate design of a vertical pump for optimal dynamic behavior.</td>
               <td>Structural dynamics</td>
               <td>SULZER AG</td>
             </tr> 
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Optimization of the geometry of the diffuser of a multistage pump to provide maximum stiffness with minimum mass.
+            Analysis performed with ANSYS and its automated optimisation capabilities.">
               <th scope="row">12</th>
               <td>2021</td>
               <td>Topology optimization of the diffuser of a multi-stage pump.</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr> 
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Calculation of the modes of a horizontal pump-motor-baseplate assembly which was showing unacceptable vibration behavior on field using FEA. 
+            Investigation of various modeling approaches to match field test results (influence of water mass, 
+            boundary conditions, mounting options of pump-baseplate [fixed contact, bolt modelling])
+            Design and evaluation of mitigation measures [geometry improvements (various beams, plates, ribs, seams]). 
+            Analysis software: SimCenter (SOL103).">
               <th scope="row">11</th>
               <td>2021</td>
               <td>Dynamic analysis of a pump-motor-baseplate assembly showing excessive vibrations on site.</td>
               <td>Structural dynamics</td>
               <td>SULZER AG</td>
             </tr>     
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Analysis of the dynamic characteristics of a fully assembled pumping system (motor-baseplate-pump). 
+            Introduction and assessment of design modifications to minimize vibrations. 
+            Parallel assessment of the accuracy of different simulation modelling techniques: MPCs/bonded connections, motor modelling, etc.            
+            Main simulation characteristics 2D shell, 3D solid (hexahedral + tetrahedral) elements. 
+            Software: Siemens Simcenter (SOL103), 2M nodes.">
               <th scope="row">10</th>
               <td>2020</td>
               <td>Baseplate design optimisation for vibration reduction.</td>
               <td>Structural dynamics (Modal Analysis)</td>
               <td>SULZER AG</td>
             </tr>     
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Second phase of O-Ring testing described below. More O-Ring types (hardnesses) tested.">
               <th scope="row">9</th>
               <td>2020</td>
               <td>Conduction of O-Ring extrusion limit hardware tests (Phase 2/2).</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Caclulation of the lateral rotordynamic behavior of a twelve stage multiphase pump. 
+            Comparison with similar machines and design modifications to improve the rotordynamic performance. 
+            Calculation done in air and water according to API610. Design variations investigated (shorter balance drum, hollow shaft, increased diameter at mechanical seal location). 
+            Underdamped bearing modes found and integrated squeeze film damper potential was investigated (modeled as stiffness and damping).">
               <th scope="row">8</th>
               <td>2020</td>
               <td>Lateral rotordynamic analysis of a twelve stage multiphase pump.</td>
               <td>Lateral Rotordynamics</td>
               <td>SULZER AG</td>
             </tr>      
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Testing of O-Ring extrusion limits under static loading for different hardnesses (axial/radial O-Rings). 
+            Programming of Excel calculation tools based on the test results for evaluation of tightness at critical hardware locations. 
+            Creation of a globally applicable guideline for the use of the test limits at calculation evaluations.">
               <th scope="row">7</th>
               <td>2019</td>
               <td>Conduction of O-Ring extrusion limit hardware tests (Phase 1/2).</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Calculation of the eigenfrequencies of bearing housings and optimisation of the bearing housing geometry to avoid excessive vibration. 
+            Advanced simulation techniques (prestressed analysis) implemented. Software: ANSYS, 500k nodes. ">
               <th scope="row">6</th>
               <td>2019</td>
               <td>Bearing housing design optimisation for vibration reduction.</td>
               <td>Structural dynamics (Modal Analysis)</td>
               <td>SULZER AG</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Strength assessment, tightness evaluation and calculation of bolt loads for a single stage pump. 
+            Non-linear FEM model (contacts, plasticity) in ANSYS. Evaluations performed according to the ASME Pressure Vessel Code.
+            Post hydrostest deformation and lifting lug strngth were assessed, too.">
               <th scope="row">5</th>
               <td>2019</td>
               <td>Evaluation of the mechanical integrity of a single stage pump.</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>    
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="The project was about axially split pumps for which O-Rings were used instead of flat gaskets to seal the two casings. 
+            O-Rings can seal higher pressures so larger casing deformations might be accepted. In this project I calculated different 
+            rib configurations on the top casing to provide maximum stiffness at minimum weight
+            Critical mechanical integrity failure modes (tightness, plastification, etc.) were assessed, too.">
               <th scope="row">4</th>
               <td>2018</td>
               <td>Design optimisation of a single stage pump with respect to casing stiffness.</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>    
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Thermal (steady state) and structural simulation (weak coupling) of hot centrifugal pumps. 
+            Design assessment in terms of deformations and stresses.">
               <th scope="row">3</th>
               <td>2018</td>
               <td>Thermal-Structural simulation of centrifugal pumps.</td>
               <td>Steady State Themal Analysis - Structural statics</td>
               <td>SULZER AG</td>
             </tr>    
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="3D geometrical representation, hexahedral & tetrahedral elements 1.5M nodes. Special finite elements programmed to model thread connections 
+            (1D non-linear spring elements). Different physical forces modeled (pretension + hydraulic forces + thermal loads + fluid pressure). 
+            Non-linear boundary conditions (deformable Multi-Point-Constraints). Main investigated failure modes: Plastic collapse, Brittle failure 
+            (linearization procedures), Tightness evaluation (contact gap criteria), Fastener assessment (semi-analytical based on forces/moments: extracted from FEM).
+             Simulation software: ANSYS, NASTRAN (SOL 101/103/401).">
               <th scope="row">2</th>
               <td>2018</td>
               <td>Pressure boundary analysis of a multistage pump.</td>
               <td>Structural statics</td>
               <td>SULZER AG</td>
             </tr>  
-            <tr>
+            <tr 
+            data-toggle="tooltip"  
+            title="End-of-life assessment of an impeller operating in partial load conditions. 
+            CFD was done for two impeller rotations (720 pressure fields). The pressure fields were imported in ANSYS WB and were rotated to match the (non-rotating) impeller. 
+            Quasi static calculations were performed to determine the corresponding 720 stress states (equivalent stresses). 
+            FKM plug-in of ANSYS was used to perform the assessment of the fatigue life of the machine (utilisation factors).">
               <th scope="row">1</th>
               <td>2017</td>
               <td>Fatigue analysis of a rotating impeller under partial load conditions.</td>
@@ -403,8 +480,9 @@
           </thead>
 
           <tbody>
-            <tr>
-              <th scope="row">6</th>
+            <tr data-toggle="tooltip"  
+            title="Discussion on the influence of the gear body geometry and modeling on basic gear calculations (Contact analysis, Load distribution factor).">
+              <th scope="row">7</th>
               <td>2022</td>
               <td>Modeling of gear body stiffness.
                 <br>(online software demonstration)
@@ -414,8 +492,11 @@
               <td>KISSsoft AG</td>
               <td>200</td>
             </tr>
-            <tr>
-              <th scope="row">5</th>
+            <tr data-toggle="tooltip"  
+            title="Basic concepts of unbalance excitations in rotordynamics.
+            Academic and industrial examples and discussion of their analysis results.
+            Comparison of unbalance excitations with asynchronous excitations.">
+              <th scope="row">6</th>
               <td>2022</td>
               <td>Unbalance excitation calculations.</td>
               <td>Lecture</td>
@@ -423,7 +504,23 @@
               <td>KISSsoft AG</td>
               <td>30</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Explanation, analysis process and physics of rotordynamic phenomena of bearing and annular seals.
+            Bearing types covered: Roller element bearings, journal bearings (plain, prestressed, tilting pad).
+            Explanation of cross coupling effects and influences.">
+              <th scope="row">5</th>
+              <td>2022</td>
+              <td>Rotordynamics of shafts/roller and journal bearings, annular pressure seals.</td>
+              <td>Lecture</td>
+              <td>Lateral rotordynamics</td>
+              <td>KISSsoft AG</td>
+              <td>30</td>
+            </tr>
+            <tr data-toggle="tooltip"  
+            title="Explanation of the fundamentals of lateral rotordynamics: forward/backward orbiting modes, 
+            gyroscopic effects, damped eigenfrequencies and modal damping. 
+            Analytic solution of the dynamic equations for simplified models (Laval-rotor) and mode animation using python scripts.
+            Harmonic response analysis process. Discussion of basic FE concepts.">
               <th scope="row">4</th>
               <td>2022</td>
               <td>Introduction to linear lateral rotordynamics with FEM.</td>
@@ -432,7 +529,11 @@
               <td>KISSsoft AG</td>
               <td>30</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Discussion on the fundamentals of lateral rotordynamics: forward/backward orbiting modes, 
+            gyroscopic effects, damped eigenfrequencies and modal damping, annular pressure seals. 
+            Analytic solution of the dynamic equations for simplified models (Laval-rotor) and mode animation using python scripts.
+             Analysis of a typical multi-stage rotor using ANSYS. Discussion on beam vs solid FE formulations, pros and cons.">
               <th scope="row">4</th>
               <td>2022</td>
               <td>Non-linear lateral rotordynamics with FEM.</td>
@@ -441,7 +542,13 @@
               <td>ETH Zurich (D-MAVT)</td>
               <td>20</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Weekly-4h seminar spanning in the course of a month. 3xSessions on lateral rotordynamics, 1xSession on torsional rotordynamics. 
+            Lateral rotrdynamics topics: FW/BW orbiting modes, gyroscopic effects, stress-stiffening effects, annular pressure seals, 
+            radial bearings (roller element, hydrodynamic), impeller-casing interaction effects, mechanical and hydraulic unbalance 
+            loads, complex modal and harmonic response analysis, interpretation of API610, case studies. Torsional-rotordynamics topics: 
+            Modeling of rotor, coupling(s), gear(s), torsional excitation sources, modal and harmonic response analysis, fatigue assessment, 
+            simulation of transient torsional events.">
               <th scope="row">3</th>
               <td>2021</td>
               <td>Lateral & Torsional rotordynamics of pumps.
@@ -452,7 +559,11 @@
               <td>SULZER AG</td>
               <td>50</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Discussion on lateral rotordynamics using a multistage pump rotor as an example.
+            Topics covered: rotordynamic theory (gyroscopic effect, FW/BW mode), influence of hydrodynamic bearings and 
+            seals (non-linear rotordynamic effects), damped (complex) modal analysis (Campbell & damping diagrams), 
+            harmonic response analysis, classification of stresses and stress evaluations. Simulation software: ANSYS WB.">
               <th scope="row">2</th>
               <td>2021</td>
               <td>Non-linear lateral rotordynamics with FEM.</td>
@@ -461,7 +572,11 @@
               <td>ETH Zurich (D-MAVT)</td>
               <td>25</td>
             </tr>
-            <tr>
+            <tr data-toggle="tooltip"  
+            title="Discussion on fundamental simulation concepts using a pressure vessel as an example. 
+            Topics covered: symmetries (radial, cyclic), meshing techniques and options (boundary layer, etc.), non-linear contact methods 
+            (pure penalty, langrangian, etc.), material laws, model checking approaches, failure modes and evaluation criteria, submodeling techniques. 
+            Simulation software: ANSYS WB.">
               <th scope="row">1</th>
               <td>2019</td>
               <td>Static structural simulation of pressure containers.</td>
