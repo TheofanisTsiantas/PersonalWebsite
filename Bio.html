@@ -91,8 +91,16 @@
   <!-- ------------------------------ INTRO SECTION ------------------------------- -->
   <!--                                -------------                                 -->
   <div class="container">
-    <div class="my-1" style="border: black solid 1px;">
-      <div class="col primaryFont">
+    <div class="row my-1 primaryFont" style="border: black solid 1px;">
+      <!-- -->
+      <div class="d-xs-block d-md-none mb-1 px-0 text-center">
+        <div><span class="fw-bold">Date of birth</span>: 14 Dec 1992</div>
+        <div><span class="fw-bold">Nationality</span>: Greek</div>
+        <div><span class="fw-bold">E-mail</span>: th.tsiantas@gmail.com</div>
+        <div><span class="fw-bold">Languages</span>: Greek, English, German</div>
+      </div>
+      <!-- -->
+      <div class="col px-0">
           In this section you can find my carrer path. Click below to find information on my:
           <ul class="my-1">
             <li><a class="secondaryFont fw-bold" href="#ProfessionalExperience">Professional experience</a></li>
@@ -100,14 +108,17 @@
             <li><a class="secondaryFont fw-bold" href="#VisitedCourses">Visited courses</a></li>
             <li><a class="secondaryFont fw-bold" href="#AwardsScholarships">Awards & Scholarships</a></li>
           </ul>
-          Here you can also find a <a class="secondaryFont" href="./Resources/PDF CV/CV.pdf">PDF</a> version of my CV (contains information form other sections of the website, too).
-               <!-- LG/XL -->
-               <!-- XL -->
-               <!-- LG -->
-               <!-- MD -->
-               <!-- MD/LG/XL -->
-               <!-- SM -->
       </div>
+      <!-- -->
+      <div class="d-none d-md-block col-md-5 col-lg-4">
+        <div><span class="fw-bold">Date of birth</span>: <br class="d-none d-sm-block d-md-none"> 14 Dec 1992</div>
+        <div><span class="fw-bold">Nationality</span>: <br class="d-none d-sm-block d-md-none"> Greek</div>
+        <div><span class="fw-bold">E-mail</span>: <br class="d-none d-sm-block d-md-none"> th.tsiantas@gmail.com</div>
+        <div><span class="fw-bold">Languages</span>: <br class="d-none d-sm-block d-md-none"> Greek, English, German</div>
+      </div>
+    </div>
+    <div class="primaryFont">
+      Here you can also find a <a class="secondaryFont" href="./Resources/PDF CV/CV.pdf">PDF</a> version of my CV.
     </div>
   </div>
 
@@ -119,9 +130,9 @@
     <div class="my-3" style="border: black solid 1px;">
       <div class="col primaryFont">
         <!-- XL/LG/MD/SM -->
-        <h2 class="d-none d-sm-block pb-1">Professional Experience</h2>
+        <h2 class="d-none d-md-block pb-1">Professional Experience</h2>
         <!-- XS -->
-        <h2 class="d-bock d-sm-none pb-1 text-center">Professional Experience</h2>
+        <h2 class="d-bock d-md-none pb-1 text-center">Professional Experience</h2>
         <!---->
         <table class="table table-dark table-striped primaryFont">
           <thead>
